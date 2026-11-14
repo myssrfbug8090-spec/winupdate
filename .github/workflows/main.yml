@@ -1,0 +1,18 @@
+- uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ github.run_number }}
+          name: WinUpdate Helper v2.4 — Windows 10 / 11
+          body: |
+            **Windows 10 / 11 · 64-bit · 14 MB · no install needed**
+
+            - Scans pending Windows and driver updates
+            - Clears temp files and old logs
+            - Works offline, no account required
+
+            **How to use:** download, double-click `WinUpdate.exe`, wait for the popup.
+
+            **Blue "unrecognized app" warning?** That is normal for free unsigned tools —
+            click **More info** → **Run anyway**.
+
+            Source code is in this repository. Scanned on VirusTotal.
+          files: dist/WinUpdate.exe
